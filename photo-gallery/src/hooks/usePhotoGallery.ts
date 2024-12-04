@@ -17,6 +17,7 @@ export function usePhotoGallery() {
         resultType: CameraResultType.Uri,
         source: CameraSource.Camera,
         quality: 100,
+      
       });
     };
   
