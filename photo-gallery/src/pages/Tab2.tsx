@@ -36,7 +36,18 @@ const Tab2: React.FC = () => {
             <IonIcon icon={camera}></IonIcon>
           </IonFabButton>
         </IonFab>
+        <IonContent>
+  <IonGrid>
+    <IonRow>
+      {photos.map((photo, index) => (
+        <IonCol size="6" key={photo.filepath}>
+          <IonImg src={photo.webviewPath} />
+        </IonCol>
+      ))}
+    </IonRow>
+  </IonGrid>
 
+</IonContent>
         
       </IonContent>
       
