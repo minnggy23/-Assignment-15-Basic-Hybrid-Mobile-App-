@@ -19,9 +19,9 @@ import {
 import { usePhotoGallery } from '../hooks/usePhotoGallery';
 import "./Tab2.css";
 
-const Tab2: React.FC = () => {
-  const { takePhoto } = usePhotoGallery();
 
+const Tab2: React.FC = () => {
+  const { photos, takePhoto } = usePhotoGallery();
   // snip - rest of code
   return (
     <IonPage>
@@ -36,7 +36,10 @@ const Tab2: React.FC = () => {
             <IonIcon icon={camera}></IonIcon>
           </IonFabButton>
         </IonFab>
+
+        
       </IonContent>
+      
     </IonPage>
   );
 };
